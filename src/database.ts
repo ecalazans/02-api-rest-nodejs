@@ -3,9 +3,9 @@ import { env } from './env';
 
 export const config: Knex.Config = {
   // Bando relacional: sqlite
-  client: env.DATABSE_CLIENT,
+  client: env.DATABASE_CLIENT,
   connection:
-    env.DATABSE_CLIENT === 'sqlite'
+    env.DATABASE_CLIENT === 'sqlite'
       ? {
           filename: env.DATABASE_URL,
         }
